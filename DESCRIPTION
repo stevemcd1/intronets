@@ -1,0 +1,10 @@
+Package: intronets
+Type: Package
+Title: intronets
+Version: 0.1.0
+Authors@R: c(person("Tom R.", "Leppard", email = "trleppar@ncsu.edu", role = c("aut", "cre")), person("Steve", "McDonald", email = "steve_mcdonad@ncsu.edu", role = "ctb"))
+Description: Description: This package provides curated network datasets used in "An Introduction to Social Network Analysis".
+License: usethis::use_mit_license("Tom R. Leppard")
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.3.3
