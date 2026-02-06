@@ -2,6 +2,7 @@
 This package includes network datasets in .rda format. These are mostly from small classic network studies. The key features of the data are described below. 
 ## sampson.rda
 SAMPSON MONASTERY STUDY
+
 undirected adjacency matrix 
   -  18 vertices (monks)
   -  60 edges ("like" relations - in the top 3 friendship rankings)
