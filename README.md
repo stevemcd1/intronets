@@ -1,4 +1,5 @@
-# This package includes network datasets in .rda format. These are mostly from small classic network studies. The key features of the data are described below. 
+# intronets
+This package includes network datasets in .rda format. These are mostly from small classic network studies. The key features of the data are described below. 
 ## sampson.rda
 SAMPSON MONASTERY STUDY
 undirected adjacency matrix 
