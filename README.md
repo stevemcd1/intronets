@@ -1,7 +1,4 @@
-# intronets
-This package includes network datasets in .rda format. These are mostly from small classic network studies. The key features of the data are described below. 
-# Intronets Package: Dataset Descriptions
-
+# intronets Package: Dataset Descriptions
 A reference guide to the datasets included in the **intronets** package.
 
 ## Contents
