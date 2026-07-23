@@ -88,10 +88,6 @@ These data were collected by Davis et al in the 1930s. They represent observed a
 
 - **name:** Person's name
 
-#### Edge Attributes
-
-NA
-
 ### References
 
 Breiger R. (1974). The duality of persons and groups. Social Forces, 53, 181- 190.
@@ -124,10 +120,6 @@ This dataset contains one undirected network matrix showing word pairs that co-o
 #### Node Attributes (All Networks)
 
 - **name:** The word
-
-#### Edge Attributes
-
-NA
 
 ### References
 
@@ -172,14 +164,6 @@ Hartford, Connecticut, late 1990s/early 2000s.
 
 - **ethnicity:** Ethnicity (coded numerically: 1–4)
 - **gender:** Gender (coded numerically)
-
-#### Edge Attributes
-
-(none)
-
-> **Note:** Use drug_connect for connectivity-dependent analyses (e.g., shortest
-
-paths, reachability). Use drugnet to study the full social field including peripheral actors.
 
 ### References
 
@@ -271,14 +255,6 @@ chapter across 15 observation periods.
 #### Node Attributes
 
 - name -- Anonymized individual identifier (X1, X2, ..., X17)
-
-#### Edge Attributes
-
-(none)
-
-> **Note:** frat_i and frat_n differ in their construction; compare the two lists
-
-to understand alternative operationalizations of ties within the same group.
 
 ### References
 
@@ -480,10 +456,6 @@ NODE ATTRIBUTES (edge list columns):
 - **artist:** Artist name (string)
 - **track_name:** Track name (string)
 
-#### Edge Attributes
-
-- (none; binary co-appearance)
-
 EXAMPLE ARTISTS : Wiley, Kano, Scorcher, Hot Chip, Messy, Desperado
 
 ### References
@@ -668,10 +640,6 @@ NODE ATTRIBUTES (shared across hta, htf, htr):
 - **level:** Hierarchical level (1 = CEO, 2 = Vice President, 3 = Manager)
 - **dept:** Department (0 = CEO/no dept, 1–4 = departments)
 
-#### Edge Attributes
-
-(none)
-
 ### References
 
 Krackhardt, D. (1987). Cognitive social structures. Social Networks, 9, 104–134.
@@ -713,10 +681,6 @@ early-to-mid 20th century. Collected by Jacob L. Moreno.
 
 - **gender:** Gender (coded 1 or 2; 16 and 17 students
 respectively)
-
-#### Edge Attributes
-
-(none)
 
 ### References
 
@@ -761,10 +725,6 @@ Data collected and coded by John Padgett.
 - **seats:** Priorates (civic council seats) held 1282–1344
 - **ties:** Total marriage/business ties in 116-family dataset
 
-#### Edge Attributes
-
-(none)
-
 ### References
 
 Breiger, R., & Pattison, P. (1986). Cumulated social roles: The duality of persons and their algebras. Social Networks, 8, 215–256.
@@ -808,10 +768,6 @@ during residency at a New England monastery, 1960s. This network reflects SAMPLK
 Outcasts, Waverers)
 
 - **cloisterville:** Pre-crisis cohort membership (logical)
-
-#### Edge Attributes
-
-(none)
 
 ### References
 
@@ -878,10 +834,6 @@ This dataset contains five directed network matrices representing economic and d
 Four trade networks capture the flow of different commodity types — manufactured goods, food and live animals, crude materials (excluding food), and minerals and fuels. A fifth network captures diplomatic exchange (mutual ambassador placement) among the same countries. In all networks, a directed tie from country A to country B indicates that A exports the relevant commodity to (or exchanges diplomats with) B.
 
 An attribute data frame provides macroeconomic context for each country: population growth, GNP growth, secondary school enrollment, and energy consumption — all measured circa 1970–1981.
-
-> **Note:** The manufactured goods network (mg) contains edge weights; other trade
-
-networks are binary.
 
 - **Data Collection:** Smith & White (1988), based on international trade statistics
 for the period 1965–1980.
