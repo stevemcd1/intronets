@@ -17,6 +17,7 @@ A reference guide to the datasets included in the **intronets** package.
 - [HOLLYWOOD MOVIES NETWORK (TWO MODE)](#hollywood-movies-network-two-mode)
 - [JOB DESCRIPTION WORD NETWORK (TEXT)](#job-description-word-network-text)
 - [KRACKHARDT HIGH-TECH MANAGERS](#krackhardt-high-tech-managers)
+- [LAZEGA LAWYERS](#lazega-lawyers)
 - [MORENO CLASSROOM SOCIOMETRY](#moreno-classroom-sociometry)
 - [PADGETT FLORENTINE FAMILIES MARRIAGE NETWORK](#padgett-florentine-families-marriage-network)
 - [SAMPSON MONASTERY NETWORK](#sampson-monastery-network)
@@ -645,6 +646,63 @@ NODE ATTRIBUTES (shared across hta, htf, htr):
 Krackhardt, D. (1987). Cognitive social structures. Social Networks, 9, 104–134.
 
 Wasserman, S., & Faust, K. (1994). Social Network Analysis: Methods and Applications. Cambridge University Press.
+
+## LAZEGA LAWYERS
+
+- **Dataset Name:** Lazega Lawyers
+- **File:** LazegaLawyers.rda
+- **R Objects:** LLadv (igraph) — Advice network
+LLfriend (igraph) — Friendship network LLfriendu (igraph) — Friendship network undirected LLwork (igraph) — Strong co-workers network
+
+### Background
+
+This data set comes from a network study of corporate law partnership that was carried out in a Northeastern US corporate law firm, referred to as SG&R, 1988-1991 in New England. It includes (among others) measurements of networks among the 71 attorneys (partners and associates) of this firm, i.e. their strong-coworker network, advice network, friendship network, and indirect control networks. Various members' attributes are also part of the dataset, including seniority, formal status, office in which they work, gender, lawschool attended, individual performance measurements (hours worked, fees brought in), attitudes concerning various management policy options, etc.
+
+- **LLadv (ADVICE):** Each manager identified colleagues they go to for advice.
+Directed: A → B means A seeks advice from B.
+
+- 71 nodes | 892 edges
+- **LLfriend (FRIENDSHIP):** Each manager identified colleagues they consider friends.
+Directed: A → B means A names B as a friend (asymmetric).
+
+- 71 nodes | 575 edges
+- **LLfriendu (FRIENDSHIPU):** Each manager identified colleagues they consider friends.
+Directed: A → B means A names B as a friend (asymmetric).
+
+- 69 nodes | 399 edges
+- **LLwork (COWORKER):** Formal organizational hierarchy, extracted from company
+documents. A → B means A reports to B.
+
+- 71 nodes | 756 edges
+All three networks share the same node set and attribute table, enabling direct comparison of formal structure (htr) with informal networks (hta, htf). This multiplex design makes the dataset ideal for studying the alignment (or misalignment) of formal and informal organizational structure.
+
+- **Data Collection:** Survey and organizational documents; west coast U.S.
+technology company, mid-1980s.
+
+- **Domain:** Organizational Behavior / Management / Multiplex Networks
+
+### Network Structure
+
+- **Network Type:** Multiplex (three one-mode directed networks, shared node set)
+- **Directed:** Yes (all three networks)
+- **Weighted:** No
+- **hta (Advice):** 21 nodes | 190 edges
+- **htf (Friendship):** 21 nodes | 102 edges
+- **htr (Reports-To):** 21 nodes |  20 edges
+
+### Attributes
+
+NODE ATTRIBUTES (shared across hta, htf, htr):
+
+- **name:** Manager name
+- **age:** Age in years
+- **tenure:** Length of service in years
+- **level:** Hierarchical level (1 = CEO, 2 = Vice President, 3 = Manager)
+- **dept:** Department (0 = CEO/no dept, 1–4 = departments)
+
+### References
+
+Lazega, Emmanuel. (2001) The Collegial Phenomenon: The Social Mechanisms of Cooperation Among Peers in a Corporate Law Partnership, Oxford University Press.
 
 ## MORENO CLASSROOM SOCIOMETRY
 
