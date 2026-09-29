@@ -658,47 +658,51 @@ LLfriend (igraph) — Friendship network LLfriendu (igraph) — Friendship netwo
 
 This data set comes from a network study of corporate law partnership that was carried out in a Northeastern US corporate law firm, referred to as SG&R, 1988-1991 in New England. It includes (among others) measurements of networks among the 71 attorneys (partners and associates) of this firm, i.e. their strong-coworker network, advice network, friendship network, and indirect control networks. Various members' attributes are also part of the dataset, including seniority, formal status, office in which they work, gender, lawschool attended, individual performance measurements (hours worked, fees brought in), attitudes concerning various management policy options, etc.
 
-- **LLadv (ADVICE):** Each manager identified colleagues they go to for advice.
+- **LLadv (ADVICE):** Each lawyer identified colleagues they go to for advice.
 Directed: A → B means A seeks advice from B.
 
 - 71 nodes | 892 edges
-- **LLfriend (FRIENDSHIP):** Each manager identified colleagues they consider friends.
+- **LLfriend (FRIENDSHIP):** Each lawyer identified colleagues they socialize with outside of work.
 Directed: A → B means A names B as a friend (asymmetric).
 
 - 71 nodes | 575 edges
-- **LLfriendu (FRIENDSHIPU):** Each manager identified colleagues they consider friends.
-Directed: A → B means A names B as a friend (asymmetric).
+- **LLfriendu (FRIENDSHIPU):** Each lawyer identified colleagues they socialize with outside of work.
+Undirected: A - B means either A named B or B named A as a friend (symmetric).
+Connected component only. 
 
 - 69 nodes | 399 edges
-- **LLwork (COWORKER):** Formal organizational hierarchy, extracted from company
-documents. A → B means A reports to B.
+- **LLwork (COWORKER):** Each lawyer identified colleagues they have worked together with on a case.
+Directed: A → B means A names B as a co-worker.
 
 - 71 nodes | 756 edges
-All three networks share the same node set and attribute table, enabling direct comparison of formal structure (htr) with informal networks (hta, htf). This multiplex design makes the dataset ideal for studying the alignment (or misalignment) of formal and informal organizational structure.
 
-- **Data Collection:** Survey and organizational documents; west coast U.S.
-technology company, mid-1980s.
+- **Data Collection:** Survey; Northeastern US corporate law firm, 1988-1991.
 
 - **Domain:** Organizational Behavior / Management / Multiplex Networks
 
 ### Network Structure
 
-- **Network Type:** Multiplex (three one-mode directed networks, shared node set)
-- **Directed:** Yes (all three networks)
+- **Network Type:** Multiplex (four one-mode directed networks, shared node set)
+- **Directed:** Yes for LLadv, LLfriend, and LLwork; No for LLfriendu
 - **Weighted:** No
-- **hta (Advice):** 21 nodes | 190 edges
-- **htf (Friendship):** 21 nodes | 102 edges
-- **htr (Reports-To):** 21 nodes |  20 edges
+- **LLadv (Advice):** 71 nodes | 892 edges
+- **LLfriend (Friendship):** 71 nodes | 575 edges
+- **LLfriendu (Friendshipu):** 69 nodes | 399 edges
+- **LLwork (Co-worker):** 71 nodes |  756 edges
 
 ### Attributes
 
-NODE ATTRIBUTES (shared across hta, htf, htr):
+NODE ATTRIBUTES (shared across LLadv, LLfriend, LLfriendu, LLwork):
 
 - **name:** Manager name
+- **seniority:** Numerical ranking
+- **status:** 1=partner; 2=associate
+- **gender:** 1=man; 2=woman
+- **office:** 1=Boston; 2=Hartford; 3=Providence
+- **years with the firm:** Number of years
 - **age:** Age in years
-- **tenure:** Length of service in years
-- **level:** Hierarchical level (1 = CEO, 2 = Vice President, 3 = Manager)
-- **dept:** Department (0 = CEO/no dept, 1–4 = departments)
+- **practice:** 1=litigation; 2=corporate
+- **law school:** 1: harvard, yale; 2: ucon; 3: other)
 
 ### References
 
